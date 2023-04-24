@@ -23,6 +23,10 @@ a {
   color: #000000;
 }
 
+img {
+  max-width: 100%;
+}
+
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
@@ -112,6 +116,7 @@ body {
 
 .card {
   max-width: 540px;
+  /* min-height: 400px; */
   background-color: #ffffff;
   box-shadow: 0px 10px 40px rgba(126, 155, 189, 0.35);
   transition: transform 0.2s ease-in;
@@ -160,9 +165,13 @@ body {
   gap: 15px;
   justify-content: space-between;
 }
+.footer-colum {
+  /* width: calc((100% - 2 * 15px) / 3); */
+  max-width: 350px;
+  flex-grow: 1;
+}
 
 .footer-copyright {
-  flex-basis: calc((100% - 2 * 15px) / 3);
   color: #7e9ec9;
 }
 
@@ -180,7 +189,6 @@ body {
 }
 
 .footer-social {
-  flex-basis: calc((100% - 2 * 15px) / 3);
   padding-top: 8px;
 }
 
@@ -198,7 +206,6 @@ body {
 }
 
 .footer-contacts {
-  flex-basis: calc((100% - 2 * 15px) / 3);
   padding-top: 8px;
 }
 
