@@ -20,11 +20,13 @@ ol {
 
 a {
   text-decoration: none;
+  color: #000000;
 }
 
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
+  color: #000000;
 }
 
 .container {
@@ -109,10 +111,24 @@ body {
 }
 
 .card {
-  padding: 20px;
   max-width: 540px;
   background-color: #ffffff;
   box-shadow: 0px 10px 40px rgba(126, 155, 189, 0.35);
+  transition: transform 0.2s ease-in;
+}
+
+.card:hover {
+  transform: translateY(-15px);
+}
+
+.card-link {
+  display: block;
+  padding: 20px;
+  transition: color 0.2s ease-in;
+}
+
+.card-link:hover {
+  color: rgb(39, 91, 236);
 }
 
 .card-img {
@@ -123,14 +139,12 @@ body {
   font-weight: 600;
   font-size: 24px;
   line-height: 1.3;
-  color: #000000;
   margin-bottom: 13px;
 }
 
 .card p {
   font-size: 16px;
   line-height: 1.3;
-  color: #000000;
 }
 
 .footer {
@@ -167,6 +181,7 @@ body {
 
 .footer-social {
   flex-basis: calc((100% - 2 * 15px) / 3);
+  padding-top: 8px;
 }
 
 .footer-social p {
@@ -184,6 +199,7 @@ body {
 
 .footer-contacts {
   flex-basis: calc((100% - 2 * 15px) / 3);
+  padding-top: 8px;
 }
 
 .footer-contacts p {
@@ -203,5 +219,67 @@ body {
   font-size: 16px;
   line-height: 1.3;
   text-transform: uppercase;
+  color: #ffffff;
+
+  transition: all 0.2s ease-in;
+}
+
+.footer-btn-linkedin:hover {
+  background-color: #ffffff;
+  color: #1e4776;
+}
+
+/* Project */
+
+.project {
+  padding-top: 80px;
+  padding-bottom: 120px;
+  text-align: center;
+}
+
+.project-header {
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 1.3;
+  margin-bottom: 40px;
+}
+
+.project-img {
+  margin-bottom: 70px;
+}
+
+.project-discription {
+  margin: 0 auto 60px;
+  max-width: 730px;
+}
+
+.project-discription p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.project-discription-link {
+  color: #275bec;
+  font-style: italic;
+}
+
+.project-btn-back {
+  display: inline-block;
+  border: 3px solid #275bec;
+  border-radius: 50px;
+  padding: 10px 30px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  color: #275bec;
+
+  transition: all 0.2s ease-in;
+}
+
+.project-btn-back:hover {
+  background-color: #275bec;
   color: #ffffff;
 }
