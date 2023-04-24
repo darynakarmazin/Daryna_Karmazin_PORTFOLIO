@@ -79,4 +79,21 @@
   .footer-contacts p {
     font-style: 14px;
   }
+
+  .project {
+    padding: 40px 0 60px;
+  }
+
+  .project-header {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .project-img {
+    margin-bottom: 20px;
+  }
+
+  .project-discription {
+    margin-bottom: 50px;
+  }
 }
