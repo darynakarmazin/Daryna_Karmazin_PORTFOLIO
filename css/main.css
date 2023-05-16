@@ -122,6 +122,7 @@ body {
   max-width: 540px;
   min-height: 434px;
   background-color: #ffffff;
+  border-radius: 6px;
   box-shadow: 0px 10px 40px rgba(126, 155, 189, 0.35);
   transition: transform 0.2s ease-in;
 }
